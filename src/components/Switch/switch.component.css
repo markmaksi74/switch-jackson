@@ -1,0 +1,51 @@
+.inputWrapper {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.input {
+    position: absolute;
+    left: -9999px;
+    top: -99999px;
+}
+
+.slider {
+    display: flex;
+    cursor: pointer;
+    width: 35px;
+    height: 15px;
+    border-radius: 100px;
+    background-color: #C6C6C6;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: -2.5px;
+    left: -2px;
+    width: 21px;
+    height: 21px;
+    border-radius: 45px;
+    transition: 0.2s;
+    background: #fff;
+    background-color: #6200EE;
+    box-shadow: 0 2px 4px 0 rgba(198, 198, 198, 1);
+}
+
+/* changes the width of the slider after clicking on it */
+.slider:active:before {
+    width: 24px;
+}
+
+/* slider changes color when toggled state is true */
+input:checked + .slider {
+    background-color: #C39EF8;
+}
+
+/* slides to the left when toggled state is true */
+input:checked + .slider:before {
+    left: 18px;
+}
