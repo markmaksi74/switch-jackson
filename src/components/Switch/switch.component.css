@@ -15,7 +15,8 @@
     cursor: pointer;
     width: 35px;
     height: 15px;
-    border-radius: 100px;
+    border-radius: 50%;
+
     background-color: #C6C6C6;
     position: relative;
     transition: background-color 0.2s;
