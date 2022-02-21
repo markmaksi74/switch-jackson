@@ -7,8 +7,4 @@ export default {
   component: Switch,
 };
 
-export const Toggle = () => {
-  return (
-    <Switch />
-  )
-}
+export const Toggle = () => <Switch />;
