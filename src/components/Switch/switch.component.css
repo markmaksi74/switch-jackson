@@ -25,7 +25,7 @@ html {
   width: 3.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   position: relative;
   transition: background-color 0.2s;
 }
@@ -50,8 +50,8 @@ html {
 }
 
 /* slider changes color when toggled state is true */
-input:checked + .slider {
-  background-color: var(--secondary-color);
+.slider-checked {
+  background-color: var(--main-color);
 }
 
 /* slides to the left when toggled state is true */
