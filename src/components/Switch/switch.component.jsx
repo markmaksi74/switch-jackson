@@ -11,14 +11,9 @@ const Switch = () => {
   return (
     <label className="inputWrapper">
       <input className="input" type="checkbox" onChange={toggle}></input>
-      <span
-        className={`slider ${checked ? 'slider-checked' : ''} `}
-      />
+      <span className={`slider ${checked ? 'slider-checked' : ''} `} />
     </label>
   );
 };
 
 export default Switch;
-
-
-

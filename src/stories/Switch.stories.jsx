@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Switch from '../components/Switch/switch.component'
+import Switch from '../components/Switch/switch.component';
 
 export default {
-  title: "Switch/Toggle Button",
+  title: 'Switch/Toggle Button',
   component: Switch,
 };
 
