@@ -5,6 +5,7 @@ html {
 :root {
   --main-color: #6200ee;
   --secondary-color: #c39ef8;
+  --default-color: #fff;
 }
 
 .inputWrapper {
@@ -25,7 +26,7 @@ html {
   width: 3.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: var(--secondary-color);
+  background-color: #c6c6c6;
   position: relative;
   transition: background-color 0.2s;
 }
@@ -33,15 +34,14 @@ html {
 .slider::before {
   content: '';
   position: absolute;
-  top: -0.25rem;
+  top: -0.24rem;
   left: -0.2rem;
   width: 2.1rem;
   height: 2.1rem;
   border-radius: 4.5rem;
   transition: 0.2s;
-  background: #fff;
-  background-color: var(--main-color);
-  box-shadow: 0 0.2rem 0.4rem 0 rgba(198, 198, 198, 1);
+  background-color: var(--default-color);
+  box-shadow: 0 0.2rem 0.4rem 0 rgb(63, 63, 63);
 }
 
 /* changes the width of the slider after clicking on it */
@@ -51,10 +51,11 @@ html {
 
 /* slider changes color when toggled state is true */
 .slider-checked {
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
 }
 
 /* slides to the left when toggled state is true */
 input:checked + .slider:before {
   left: 1.8rem;
+  background-color: var(--main-color);
 }
