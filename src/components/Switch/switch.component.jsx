@@ -6,8 +6,7 @@ const Switch = () => {
 
   return (
     <label className="inputWrapper">
-      <input className="input" type="checkbox" onChange={() => setChecked(!checked)}></input>
-      ...
+      <input hidden className="input" type="checkbox" onChange={() => setChecked(!checked)}></input>
       <span className={`slider ${checked ? 'slider-checked' : ''} `} />
     </label>
   );
