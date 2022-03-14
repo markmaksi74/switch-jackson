@@ -17,9 +17,9 @@ html {
 .slider {
   display: flex;
   cursor: pointer;
-  width: 7rem;
-  height: 3rem;
-  border-radius: 1.4rem;
+  width: 10.5rem;
+  height: 4.5rem;
+  border-radius: 2.1rem;
   background-color: #c6c6c6;
   position: relative;
   transition: background-color 0.2s;
@@ -30,10 +30,10 @@ html {
   position: absolute;
   /* --"transition" no longer works if this is on and to and left are omitted*/
   /* transform: translateY(-12%); */
-  top: -0.48rem;
+  top: -0.9rem;
   left: -0.40rem;
-  width: 4rem;
-  height: 4rem;
+  width: 6.5rem;
+  height: 6.5rem;
   border-radius: 9rem;
   transition: 0.2s;
   /* transition-duration: 900ms; */
@@ -43,7 +43,7 @@ html {
 
 /* changes the width of the slider after clicking on it */
 .slider:active:before {
-  width: 4.8rem;
+  width: 7.2rem;
 }
 
 /* slider changes color when toggled state is true */
@@ -53,6 +53,6 @@ html {
 
 /* slides to the left when toggled state is true */
 input:checked + .slider:before {
-  left: 3.5rem;
+  left: 4.7rem;
   background-color: var(--main-color);
 }
