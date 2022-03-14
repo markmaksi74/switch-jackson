@@ -36,14 +36,8 @@ html {
   height: 6.5rem;
   border-radius: 9rem;
   transition: 0.2s;
-  /* transition-duration: 900ms; */
   background-color: var(--default-color);
   box-shadow: 0rem 0.07rem 0.5rem 0.15rem rgba(88, 88, 88, 0.5);
-}
-
-/* changes the width of the slider after clicking on it */
-.slider:active:before {
-  width: 7.2rem;
 }
 
 /* slider changes color when toggled state is true */
